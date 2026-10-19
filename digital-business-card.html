@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton Emmanuel Kipkemoi | Digital Business Card</title>
+    <style>
+        :root {
+            --navy: #0f2742;
+            --blue: #1f6feb;
+            --teal: #14b8a6;
+            --light: #f4f7fb;
+            --text: #1e293b;
+            --muted: #64748b;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #e0ecff 0%, #e6fbf8 100%);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 40px 16px;
+        }
+
+        .card {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(15, 39, 66, 0.18);
+        }
+
+        /* ---------- Header ---------- */
+        header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, var(--teal) 100%);
+            color: #fff;
+            text-align: center;
+            padding: 48px 24px 64px;
+        }
+
+        .photo {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            background: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .tagline {
+            margin-top: 8px;
+            font-size: 1.05rem;
+            opacity: 0.92;
+        }
+
+        /* ---------- Content ---------- */
+        main { padding: 8px 40px 40px; }
+
+        section { margin-top: 32px; }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--navy);
+            padding-bottom: 8px;
+            margin-bottom: 14px;
+            border-bottom: 3px solid transparent;
+            border-image: linear-gradient(90deg, var(--blue), var(--teal)) 1;
+            display: inline-block;
+        }
+
+        p { color: var(--text); }
+
+        /* Skill chips */
+        .skills {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills li {
+            background: var(--light);
+            color: var(--blue);
+            border: 1px solid #cfe0fb;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            transition: all 0.2s ease;
+        }
+
+        .skills li:hover {
+            background: var(--blue);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* Highlight boxes */
+        .box {
+            background: var(--light);
+            border-left: 5px solid var(--teal);
+            padding: 16px 20px;
+            border-radius: 8px;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--blue), var(--teal));
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 12px 28px;
+            border-radius: 999px;
+            box-shadow: 0 6px 16px rgba(31, 111, 235, 0.35);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 22px rgba(31, 111, 235, 0.45);
+        }
+
+        footer {
+            background: var(--navy);
+            color: #cbd5e1;
+            text-align: center;
+            padding: 16px;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 520px) {
+            main { padding: 8px 22px 32px; }
+            header h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <header>
+            <div class="photo">
+                <img src="profile.jpg" alt="Profile photo of Newton Emmanuel Kipkemoi"
+                     onerror="this.parentNode.textContent='NK';">
+            </div>
+            <h1>Newton Emmanuel Kipkemoi</h1>
+            <p class="tagline">IT Student &bull; Aspiring Web Developer</p>
+        </header>
+
+        <main>
+
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    Hello! My name is Newton Emmanuel Kipkemoi.
+                    I am an IT student interested in programming,
+                    computer technology, and web development.
+                    I enjoy learning new skills and using technology
+                    to solve problems.
+                </p>
+            </section>
+
+            <section>
+                <h2>My Skills and Interests</h2>
+                <ul class="skills">
+                    <li>HTML and Web Development</li>
+                    <li>Programming</li>
+                    <li>Computer Networking</li>
+                    <li>System Administration</li>
+                    <li>Computer Security</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>My Experience</h2>
+                <div class="box">
+                    <p>
+                        I am developing my IT knowledge through coursework
+                        and practical computer projects. I am currently
+                        learning how to create websites using HTML.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>My Goals</h2>
+                <div class="box">
+                    <p>
+                        My goal is to become a skilled IT professional
+                        and use technology to create useful solutions.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Connect With Me</h2>
+                <p>
+                    <a class="btn" href="https://github.com/finchlamar/" target="_blank" rel="noopener">
+                        Visit My GitHub
+                    </a>
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            &copy; 2026 Newton Emmanuel Kipkemoi
+        </footer>
+
+    </div>
+
+</body>
+</html>
